@@ -1,5 +1,7 @@
 # vue2-learning
 some important practice
+### todoList.htm
+- 一个基于vue的任务待办列表
 ### v-model文件实现双向绑定
 - 双向绑定是MVVM模式，具体通过数据劫持和发布订阅者模式实现。
 - 数据劫持由Object.defineProperty实现，通过循环遍历对象的每一个属性。
