@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button class="btn">点我发送请求</button>
+  <script type="text/javascript" src="./myaxios.js"></script>
+  <script>
+    document.querySelector('.btn').onclick = function () {
+      axios.post('/postAxios', {
+        name: '小明post'
+      }).then(res => {
+        console.log('postAxios 成功响应', res)
+      })
+
+      axios({
+        method: 'post',
+        url: '/getAxios'
+      }).then(res => {
+        console.log('getAxios 成功响应', res)
+      })
+    }
+  </script>
+</body>
+</html>
